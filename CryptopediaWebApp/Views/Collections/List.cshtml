@@ -1,0 +1,14 @@
+﻿@model IEnumerable<WebApplication3.Models.CollectionsDto>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List</h2>
+<a href="/Collections/New">New Collections</a>
+@foreach (var Collections in Model)
+{
+    <h2><a href="/Collections/Details/@Collections.CollectionsID">@Collections.CollectionsName</a></h2>
+    <div>Collection Standard: @Collections.CollectionsStandard</div>
+
+}
+

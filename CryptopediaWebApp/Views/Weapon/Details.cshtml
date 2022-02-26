@@ -1,0 +1,20 @@
+﻿@model WebApplication3.Models.ViewModels.DetailsWeapon
+@{ ViewBag.Title = "Details"; }
+<a href="/Weapon/List">Go back to list</a>
+<br />
+<a href="/Weapon/Edit/@Model.SelectedWeapon.WeaponID">Update</a>
+<br />
+<a style="color:darkred;" href="/Weapon/DeleteConfirm/@Model.SelectedWeapon.WeaponID">Delete</a>
+<h2>@Model.SelectedWeapon.WeaponName</h2>
+<div>Weapon Creation Year: @Model.SelectedWeapon.WeaponCreationYear</div>
+<div>Weapon Description: @Model.SelectedWeapon.WeaponDescription</div>
+<div>
+
+    Collection Year: @Model.SelectedWeapon.CollectionsStandard
+
+</div>
+
+
+
+
+

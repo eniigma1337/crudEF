@@ -1,0 +1,24 @@
+﻿@model WebApplication3.Models.ViewModels.DetailsCollections
+
+
+@{
+    ViewBag.Title = "View";
+}
+
+<a href="/Collections/List">Go back to list</a>
+<br />
+<a href="/Collections/Edit/@Model.SelectedCollections.CollectionsID">Update</a>
+<br />
+<a style="color:darkred;" href="/Collections/DeleteConfirm/@Model.SelectedCollections.CollectionsID">Delete</a>
+<h2>@Model.SelectedCollections.CollectionsName</h2>
+<div>Standard: @Model.SelectedCollections.CollectionsStandard</div>
+
+
+<div style="margin-top:100px;">
+    <h3>Weapons in this collection</h3>
+    @foreach (var weapon in Model.RelatedWeapons)
+    {
+        <a href="/Weapon/Details/@weapon.WeaponID">@weapon.WeaponName</a>
+
+    }
+</div>
