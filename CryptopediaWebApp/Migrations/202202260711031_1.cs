@@ -13,7 +13,7 @@ namespace WebApplication3.Migrations
                     {
                         CollectionsID = c.Int(nullable: false, identity: true),
                         CollectionsName = c.String(),
-                        CollectionsStandard = c.String(),
+                        CollectionsYear = c.String(),
                     })
                 .PrimaryKey(t => t.CollectionsID);
             

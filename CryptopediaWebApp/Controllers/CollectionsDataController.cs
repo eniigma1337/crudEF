@@ -38,7 +38,7 @@ namespace WebApplication3.Controllers
             {
                 CollectionsID = s.CollectionsID,
                 CollectionsName = s.CollectionsName,
-                CollectionsStandard = s.CollectionsStandard
+                CollectionsYear = s.CollectionsYear
             }));
 
             return Ok(CollectionsDtos);
@@ -66,7 +66,7 @@ namespace WebApplication3.Controllers
             {
                 CollectionsID = Collections.CollectionsID,
                 CollectionsName = Collections.CollectionsName,
-                CollectionsStandard = Collections.CollectionsStandard
+                CollectionsYear = Collections.CollectionsYear
             };
             if (Collections == null)
             {

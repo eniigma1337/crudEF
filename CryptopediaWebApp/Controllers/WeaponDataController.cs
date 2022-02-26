@@ -31,7 +31,7 @@ namespace WebApplication3.Controllers
                 WeaponDescription = a.WeaponDescription,
                 CollectionsID = a.Collections.CollectionsID,
                 CollectionsName = a.Collections.CollectionsName,
-                CollectionsStandard = a.Collections.CollectionsStandard
+                CollectionsYear = a.Collections.CollectionsYear
             }));
             return WeaponDtos;
         }
@@ -62,7 +62,7 @@ namespace WebApplication3.Controllers
                 WeaponDescription = a.WeaponDescription,
                 CollectionsID = a.Collections.CollectionsID,
                 CollectionsName = a.Collections.CollectionsName,
-                CollectionsStandard = a.Collections.CollectionsStandard
+                CollectionsYear = a.Collections.CollectionsYear
             }));
 
             return Ok(WeaponDtos);
@@ -82,7 +82,7 @@ namespace WebApplication3.Controllers
                 WeaponDescription = Weapon.WeaponDescription,
                 CollectionsID = Weapon.Collections.CollectionsID,
                 CollectionsName = Weapon.Collections.CollectionsName,
-                CollectionsStandard = Weapon.Collections.CollectionsStandard
+                CollectionsYear = Weapon.Collections.CollectionsYear
             };
             if (Weapon == null)
             {

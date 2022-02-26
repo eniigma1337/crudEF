@@ -31,7 +31,7 @@ namespace WebApplication3.Models
         public string WeaponDescription { get; set; }
         public int CollectionsID { get; set; }
         public string CollectionsName { get; set; }
-        public string CollectionsStandard { get; set; }
+        public string CollectionsYear { get; set; }
 
 
 
