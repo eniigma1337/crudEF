@@ -6,13 +6,10 @@
 
 <h2>Are you sure you want to delete this weapon?</h2>
 <a href="/Weapon/List">Cancel</a>
-<h2>@Model.WeaponName</h2>
-
-<div>Weapon Creation Year: @Model.WeaponCreationYear</div>
-<div>Weapon Description: @Model.WeaponDescription</div>
-<div>Collection Year: @Model.CollectionsYear</div>
-
 <form action="/Weapon/Delete/@Model.WeaponID" method="POST">
     <input type="submit" value="Confirm Delete" />
 </form>
+<h2>@Model.WeaponName</h2>
+
+
 
