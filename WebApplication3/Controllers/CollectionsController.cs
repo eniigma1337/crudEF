@@ -26,7 +26,7 @@ namespace WebApplication3.Controllers
         public ActionResult List()
         {
             //objective: communicate with our Collections data api to retrieve a list of Collections
-            //curl https://localhost:44324/api/Collectionsdata/listCollectionss
+            //curl https://localhost:44324/api/Collectionsdata/listCollections
 
 
             string url = "collectionsdata/listcollections";
